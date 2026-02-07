@@ -1,14 +1,16 @@
 import React from 'react';
 
-const StatCard = ({ icon: Icon, label, value, subtext }) => (
-    <div className="bg-white p-6 rounded-2xl border border-medical-100 shadow-soft flex flex-col items-center text-center group hover:shadow-lg hover:-translate-y-1 transition-all duration-500">
-        <div className="p-3 rounded-xl bg-brand-50 mb-4 group-hover:bg-brand-100 transition-colors">
-            <Icon className="text-brand-600" size={24} />
+const StatCard = ({ icon: Icon, label, value, subtext }) => {
+    return (
+        <div className="glass-card p-6 rounded-2xl flex flex-col items-center text-center group hover:-translate-y-1 transition-transform duration-300">
+            <div className="p-3 bg-brand-50 rounded-xl mb-4 group-hover:bg-brand-100 transition-colors">
+                <Icon size={24} className="text-brand-600" />
+            </div>
+            <div className="text-3xl font-bold text-medical-900 mb-1 tracking-tight">{value}</div>
+            <div className="text-sm font-semibold text-medical-600 mb-1">{label}</div>
+            <div className="text-xs text-medical-400 font-medium">{subtext}</div>
         </div>
-        <div className="text-3xl font-bold tracking-tight text-medical-900 mb-1">{value}</div>
-        <div className="text-[11px] uppercase tracking-wider text-medical-500 font-semibold">{label}</div>
-        {subtext && <div className="text-[10px] mt-2 text-brand-600 font-medium bg-brand-50 px-2 py-1 rounded-full">{subtext}</div>}
-    </div>
-);
+    );
+};
 
 export default StatCard;
