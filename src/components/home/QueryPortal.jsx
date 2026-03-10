@@ -74,8 +74,8 @@ const QueryPortal = () => {
                                     setTimeout(() => setQueryStatus('success'), 2000);
                                 }}
                                 className={`w-full py-4 text-white font-extrabold uppercase tracking-widest text-xs rounded-xl shadow-lg transition-all flex items-center justify-center gap-3 active:scale-[0.98] ${queryStatus === 'processing'
-                                        ? 'bg-medical-800 opacity-90 cursor-wait'
-                                        : 'bg-medical-950 hover:bg-brand-600 hover:shadow-brand-500/30 hover:-translate-y-1'
+                                    ? 'bg-medical-800 opacity-90 cursor-wait'
+                                    : 'bg-medical-950 hover:bg-brand-600 hover:shadow-brand-500/30 hover:-translate-y-1'
                                     }`}
                             >
                                 {queryStatus === 'processing' ? (
@@ -120,30 +120,30 @@ const QueryPortal = () => {
                             </AnimatePresence>
                         </div>
                     </div>
-                </div>
 
-                {/* Right: Text Content */}
-                <div className="lg:pl-8">
-                    <h2 className="text-4xl md:text-5xl font-bold text-medical-900 mb-6 leading-tight tracking-tight">
-                        Accelerate Discovery. <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-medical-400 to-medical-600">Mitigate Risk.</span>
-                    </h2>
-                    <p className="text-lg text-medical-600 mb-10 leading-relaxed font-medium">
-                        Pharmaceutical partners can now query massive, diverse cohorts in seconds.
-                        By leveraging our ZK-Layer, you gain the genetic evidence required without the legal risk of bulk data transfer.
-                    </p>
-                    <div className="grid grid-cols-2 gap-8 border-t border-medical-200/60 pt-8">
-                        <div>
-                            <div className="text-brand-600 font-bold mb-2 uppercase text-[10px] tracking-widest flex items-center gap-2">
-                                <ShieldCheck size={14} /> Compliance
+                    {/* Right: Text Content */}
+                    <div className="lg:pl-8">
+                        <h2 className="text-4xl md:text-5xl font-bold text-medical-900 mb-6 leading-tight tracking-tight">
+                            Accelerate Discovery. <br />
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-medical-400 to-medical-600">Mitigate Risk.</span>
+                        </h2>
+                        <p className="text-lg text-medical-600 mb-10 leading-relaxed font-medium">
+                            Pharmaceutical partners can now query massive, diverse cohorts in seconds.
+                            By leveraging our ZK-Layer, you gain the genetic evidence required without the legal risk of bulk data transfer.
+                        </p>
+                        <div className="grid grid-cols-2 gap-8 border-t border-medical-200/60 pt-8">
+                            <div>
+                                <div className="text-brand-600 font-bold mb-2 uppercase text-[10px] tracking-widest flex items-center gap-2">
+                                    <ShieldCheck size={14} /> Compliance
+                                </div>
+                                <div className="text-sm font-bold text-medical-800">DOJ Bulk Data Rule 2025 Ready</div>
                             </div>
-                            <div className="text-sm font-bold text-medical-800">DOJ Bulk Data Rule 2025 Ready</div>
-                        </div>
-                        <div>
-                            <div className="text-brand-600 font-bold mb-2 uppercase text-[10px] tracking-widest flex items-center gap-2">
-                                <Zap size={14} /> Efficiency
+                            <div>
+                                <div className="text-brand-600 font-bold mb-2 uppercase text-[10px] tracking-widest flex items-center gap-2">
+                                    <Zap size={14} /> Efficiency
+                                </div>
+                                <div className="text-sm font-bold text-medical-800">70% Clinical Cost Reduction</div>
                             </div>
-                            <div className="text-sm font-bold text-medical-800">70% Clinical Cost Reduction</div>
                         </div>
                     </div>
                 </div>
